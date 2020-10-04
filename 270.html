@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .mystyleA {
+          font-style: Arial;
+        }
+        .mystyleD {
+          font-family: Arial;
+        }
+  
+        </style>
+</head>
+<body>
+    <h1>PREGUNTA 270 - JOSE VICENTE TEJERO</h1>
+    <div id="yellow" style=background-color:yellow> My Yellow Content </div>
+    <div id="blue" style=background-color:blue> My Blue Content </div>
+    <div id="red" style=background-color:red> My Red Content </div>
+
+    <p>
+        <br> <br>
+        <p> You have the following markup.</p><br>
+        <p> Which line of code should you use?</p><br>
+
+
+        References:  <a href=https://www.w3schools.com/CSSref/pr_class_display.asp"; W3schools</a><br>
+        <br><br><br>
+  
+        <script>
+            // OPCIÓN A
+            function validateA() {
+                document.getElementById("blue").style.display = "none";
+                return;
+            }
+        
+            // OPCIÓN B
+            function validateB() {
+                $("#blue").css("visibility", "collapse");
+                return;
+            }
+        
+            // OPCIÓN C
+            function validateC() {
+                document.getElementById("blue").style.visibility = "hidden";
+                return;
+            }
+        
+            // OPCIÓN D
+            function validateD() {
+                $("#blue").css("visibility", "hidden");
+                return;
+            }
+            // OPCIÓN E
+            function validateE() {
+                document/getElementById("blue").style.visibility = "hidden";
+                return;
+            }
+
+        
+        </script>
+        <br><br>
+        
+        <button type="button" onclick="validateA()">OPCION A</button>
+        <button type="button" onclick="validateB()">OPCION B</button>
+        <button type="button" onclick="validateC()">OPCION C</button>
+        <button type="button" onclick="validateD()">OPCION D</button>
+        <button type="button" onclick="validateE()">OPCION E</button>
+        <br><br><br><br>
+
+</body>
+</html>

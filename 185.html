@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .mystyleA {
+          font-style: Arial;
+        }
+        .mystyleD {
+          font-family: Arial;
+        }
+        p:last-child { color:blue}
+
+    </style>
+</head>
+<body>
+    <h1>PREGUNTA 185 - JOSE VICENTE TEJERO</h1>
+     <p>
+        <br> <br>
+        <p> You have the following HTML markup.</p><br>
+        <XMP>
+            <div id="container"
+            <p>Welcome</p>
+            <p>to this site</p>
+            </div>
+            
+        </XMP>
+        <p> You need to create a style so that the text "to this site" is displayed in blue<br>
+            Which markup should you use?<br><br>
+            A.-  #container.div:last-of-type { color:blue}<br>
+            B.-  #container.div:last-child { color:blue}<br>
+            C-   #container.p:last-of-type { color:blue}<br>
+            D-   p:last-child { color:blue}</p><br>
+       
+       <p>
+        Correct Answer: D<br>
+        Section: Volume D<br>
+        Explanation: LA SOLUCIÓN ES LA OPCIÓN D, COMO SE PUEDE VER SE APLICA AL ÚLTIMO P<br>
+        Explanation/Reference:<br>
+        Explanation:<br>
+        The :last-child selector and the :last-of-type selector matches every element that is the last child of its<br>
+        parent.<br>
+         </p>
+        References:  <a href="https://www.w3schools.com/csSref/sel_last-of-type.asp"> W3schools</a><br>
+        <br>
+        <div id="container" 
+        <p>Welcome</p>
+        <p>to this site</p>
+        </div>
+        
+        <!-- <script>
+            // OPCIÓN 
+            function validateA() {
+                window.open("185A.html");
+            }
+            // OPCIÓN B
+            function validateB() {
+                $("#blue").css("visibility", "collapse");
+                return;
+            }
+            // OPCIÓN C
+            function validateC() {
+                document.getElementById("blue").style.visibility = "hidden";
+                return;
+            }
+            // OPCIÓN D
+            function validateD() {
+                $("#blue").css("visibility", "hidden");
+                return;
+            }
+            // OPCIÓN E
+            function validateE() {
+                document/getElementById("blue").style.visibility = "hidden";
+                return;
+            }
+       
+        </script>
+    
+        <br><br>
+        
+        <button type="button" onclick="validateA()">OPCION A</button>
+        <button type="button" onclick="validateB()">OPCION B</button>
+        <button type="button" onclick="validateC()">OPCION C</button>
+        <button type="button" onclick="validateD()">OPCION D</button>
+        <button type="button" onclick="validateE()">OPCION E</button>
+        <br><br><br><br>
+        -->
+</body>
+</html>
