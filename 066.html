@@ -31,17 +31,7 @@
         D. <input type="month" itemscope="numeric" />
         E. <input type=”date” data-role=”month” />
 
-
-
-        <br><br><br><br>
-
-
-        You need to move the picture element lower on the page by five pixels. <br>
-        Which two lines of code should you use? Each correct answer presents part of the solution. <br>
-        NOTE: Each correct selection is worth one point.<br><br>
         <br><br>
-
-
         Correct Answer: C<br>
         Section: Volume C<br>
         Explanation<br>
@@ -53,46 +43,13 @@
         &ltinput type="text" id="textInput" value="" /&gt<br>
         &lt/body&gt<br><br>
 
-        <br>
-        Where:
-        <br>
-        Length defines the top position in length units. Negative values are allowed
-        <br>
+    
+    <input type="range" name="rangeInput" min="0" max="100" onchange="updateTextInput(this.value);" />
+    <input type="text" id="textInput" value="" />
+   
+    
 
     </p>
-
-<script>
-    // OPCIÓN A
-    function validateA() {
-        document.getElementById("picture").style.position = "relative";
-        return;
-    }
-
-    // OPCIÓN B
-    function validateB() {
-        document.getElementById("picture").style.top = "50px";
-        return;
-    }
-
-    // OPCIÓN C
-    function validateC() {
-        document.getElementById("picture").style.top = "-50px";
-        return;
-    }
-
-    // OPCIÓN D
-    function validateD() {
-        document.getElementById("picture").style.position = "absolute";
-        return;
-    }
-
-</script>
-<br><br><br><br>
-
-<button type="button" onclick="validateA()">OPCION A</button>
-<button type="button" onclick="validateB()">OPCION B</button>
-<button type="button" onclick="validateC()">OPCION C</button>
-<button type="button" onclick="validateD()">OPCION D</button>
 
 
 </body>

@@ -20,11 +20,45 @@
         You need to ensure that a value is entered into txtValue before the form is submitted.<br>
         Which code segment should you use?<br>
 
-        A. Option A<br>
-        B. Option B<br>
-        C. Option C<br>
-        D. Option D<br><br>
-        Correct Answer: A<br>
+        <XMP>
+            // OPCIÓN A
+            function validateA() {
+                var name = $("#txtValue").val();
+                if (name == null || name == "")
+                    alert("please enter valid value");
+                return;
+            }
+           
+            // OPCIÓN B
+            function validate() {
+                var value = $("#txtValue").val();
+                var regex = /^(\d\,\.]*$/;
+                if (!regex.test(value))
+                    alert("please enter valid value");
+                return;
+            }
+    
+            // OPCIÓN C
+            function validate() {
+                var name = $("#txtValue").get();
+                if (name == null || name == "")
+                    alert("please enter valid value");
+                return;
+            }
+    
+            // OPCIÓN D
+            function validate() {
+                var ma, e = $("#txtValue").get();
+                var regex = /^(A-Za-z] {3}/;
+                if (!regex.test(value) || value == "")
+                    alert("please enter valid value");
+                return;
+            }
+
+        </XMP>
+
+
+        Correct Answer: A - ES LA ÚNICA OPCIÓN QUE CONTROLA QUE SE CONSIGNE UN VALOR EN EL INPUT<br>
         Section: Volume A<br>
         Explanation<br>
         Explanation/Reference:<br>

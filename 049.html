@@ -32,11 +32,31 @@
         NOTE: Each correct selection is worth one point.<br><br>
         EL ENUNCIADO INDICA: &ltdiv id="picture"&gt  &lt/div&gt  Y DEBERÍA SER &ltdiv id="picture"&gt  Picture &lt/div&gt  <br><br>
 
-        A. Option A<br>
-        B. Option B<br>
-        C. Option C<br>
-        D. Option D<br><br>
-        Correct Answer: AB<br>
+        <XMP>
+            function validateA() {
+                document.getElementById("picture").style.position = "relative";
+                return;
+            }
+
+            // OPCIÓN B
+            function validateB() {
+                document.getElementById("picture").style.top = "50px";
+                return;
+            }
+
+            // OPCIÓN C
+            function validateC() {
+                document.getElementById("picture").style.top = "-50px";
+                return;
+            }
+
+            // OPCIÓN D
+            function validateD() {
+                document.getElementById("picture").style.position = "absolute";
+               return;
+            }
+        </XMP>
+        Correct Answer: B - PUEDE COMPROBARSE PULSANDO EL BOTÓN<br>
         Section: Volume B<br>
         Explanation<br>
         We use relative position to move the position 5 pixels lower on page.<br>
@@ -51,7 +71,7 @@
         Length defines the top position in length units. Negative values are allowed<br>
 
     </p>
-    <!--
+    
             <script>
                 // OPCIÓN A
                 function validateA() {
@@ -84,6 +104,6 @@
         <button type="button" onclick="validateB()">OPCION B</button>
         <button type="button" onclick="validateC()">OPCION C</button>
         <button type="button" onclick="validateD()">OPCION D</button>
-    -->
+    
 </body>
     </html>

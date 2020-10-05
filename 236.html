@@ -17,20 +17,45 @@
 </head>
 <body>
     <h1>PREGUNTA 236 - JOSE VICENTE TEJERO</h1>
-    <div id="yellow" style=background-color:yellow> My Yellow Content </div>
-    <div id="blue" style=background-color:blue> My Blue Content </div>
-    <div id="red" style=background-color:red> My Red Content </div>
+ 
 
     <p>
-        <br> <br>
-        <p> You have the following markup.</p><br>
-        <p> Which line of code should you use?</p><br>
-
-
-        References:  <a href=https://www.w3schools.com/CSSref/pr_class_display.asp"; W3schools</a><br>
+        You are creating a custom object as described by the following code. Line numbers are included for<br>
+        reference only.
+    </p>
+    <XMP>
+        function square(side){
+            this.side = side;
+            this.perimeter = perimeter;
+        }
+    </XMP>
+    <p>
+        You need to implement the perimeter method.<br>
+        Which code segment should you insert at line 05?<br>
+        A.- function perimeter () { return 4 * side;}<br>
+        B.- function perimeter () { return 4 * this.side;}<br>
+        C-  function perimeter () { return 4 * me.side;}<br>
+        D.- function perimeter () { return 4 * obj.side;}<br><br>
+        Correct Answer: B<br>
+        Section: Volume D<br>
+        Explanation<br>
+        Explanation/Reference:<br>
+    </p><br>
+        <label for="ladoo">Teclea longitud de lado de un cuadrado</label><br>
+        <input type="number" id="lado" name="fname"><br>
+        <input id="clickMe" type="button" value="clickme" onclick="square(lado);" /> <br>
+        <p id="demo"> es el perímetro del cuadrado.</p><br>
+         References:  <a href=http://creative-coding.decontextualize.com/objects-with-methods/"> Creative-coding</a><br>
         <br><br><br>
   
         <script>
+                    function square(side){
+                         this.side = side;
+                         this.perimeter = perimeter;
+                         document.getElementById("demo").innerHTML = this.perimeter;
+                     }
+                     function perimeter () { return 4 * this.side;}
+            /*
             // OPCIÓN A
             function validateA() {
                 document.getElementById("blue").style.display = "none";
@@ -60,15 +85,16 @@
                 return;
             }
 
-        
+        */
         </script>
         <br><br>
-        
+        <!--
         <button type="button" onclick="validateA()">OPCION A</button>
         <button type="button" onclick="validateB()">OPCION B</button>
         <button type="button" onclick="validateC()">OPCION C</button>
         <button type="button" onclick="validateD()">OPCION D</button>
         <button type="button" onclick="validateE()">OPCION E</button>
+       -->
         <br><br><br><br>
 
 </body>

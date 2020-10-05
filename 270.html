@@ -17,20 +17,121 @@
 </head>
 <body>
     <h1>PREGUNTA 270 - JOSE VICENTE TEJERO</h1>
-    <div id="yellow" style=background-color:yellow> My Yellow Content </div>
-    <div id="blue" style=background-color:blue> My Blue Content </div>
-    <div id="red" style=background-color:red> My Red Content </div>
-
+ 
     <p>
         <br> <br>
-        <p> You have the following markup.</p><br>
-        <p> Which line of code should you use?</p><br>
+        <p> You have a web API that responds to a GET request and returns an image as an array of bytes.<br>
+            You need to create a page that contains a button to requests the image. The response must be displayed<br>
+            as an image on the page.<br>
+            Which two code segments can you use to achieve the goal? Each correct answer presents a complete<br>
+            solution.<br>
+            NOTE: Each correct selection is worth one point.<br>
+        </p><br>
+        <xmp>
+        <p> 
+            A.- <!DOCTYPE html>
+                <html>
+                <body>
+                    <button type="button" onclick="getImage()">Get Image</button>
+                    <br/>
+                    <img id="image"/>
+                    <script>
+                        function getImage() {
+                            var xhttp = new XMLHttpRequest();
+                            xhttp.open("GET","/api/pic", true)
+                            xhttp.responseType = "blob";
+                            xhttp.loadend = function (event) {
+                                var blob = event.response;
+                                var urlCreator = window.URL || window.webkituRL;
+                                var imageUrl = urlCreator.createObjectURL(blob);
+                                document.querySelector(#image).src = imageurl;
+                            }
+                            xhttp.loadstart(loadend);
+                        }
+                    </script>
+                </body>
+                </html>
+        </p><br>
+        B.- <!DOCTYPE html>
+        <html>
+            <head>
+                <script src="http:ajax.aspnetcon/ajax/jQuery/jQuery-3.2.1.js"
+            </head>
+        <body>
+            <button type="button" onclick="getImage()">Get Image</button>
+            <br/>
+            <img id="image"/>
+            <script>
+                function getImage() {
+                    var xhttp = new XMLHttpRequest();
+                    xhttp.open("GET","/api/pic", true)
+                    xhttp.responseType = "blob";
+                    xhttp.loadend = function (event) {
+                        var blob = event.response;
+                        var urlCreator = window.URL || window.webkituRL;
+                        var imageUrl = urlCreator.createObjectURL(blob);
+                        document.querySelector(#image).src = imageurl;
+                    }
+                    xhttp.loadstart(loadend);
+                }
+            </script>
+            
+        </body>
+        </html>
+        C- <!DOCTYPE html>
+        <html>
+        <body>
+            <button type="button" onclick="getImage()">Get Image</button>
+            <br/>
+            <img id="image"/>
+            <script>
+                function getImage() {
+                    var xhttp = new XMLHttpRequest();
+                    xhttp.open("GET","/api/pic", true)
+                    xhttp.responseType = "arraybuffer";
+                    xhttp.load = function (e) {
+                        var blob = new Blob ([xhttp.response], {
+                            type: application/o
+                            var urlCreator = window.URL || window.webkituRL;
+                            var imageUrl = urlCreator.createObjectURL(blob);
+                            document.querySelector(#image).src = imageurl;
+                        }
+                        xhttp.send();
+                    }
+                                   }
+            </script>
+        </body>
+        </html>
+        D- <!DOCTYPE html>
+        <html>
+        <body>
+            <button type="button" onclick="getImage()">Get Image</button>
+            <br/>
+            <img id="image"/>
+            <script>
+                function getImage() {
+                    var xhttp = new XMLHttpRequest();
+                    xhttp.open("GET","/api/pic", true)
+                    xhttp.responseType = "arraybuffer";
+                    xhttp.loadend = function (event) {
+                        var blob = new Blob ([xhttp.response], {
+                            var urlCreator = window.URL || window.webkituRL;
+                            var imageUrl = urlCreator.createObjectURL(blob);
+                            document.querySelector(#image).src = imageUrl;
+                        }
+                        xhttp.loadstart();
+                    }
+            </script>
+        </body>
+        </html>
 
+        </xmp>
 
-        References:  <a href=https://www.w3schools.com/CSSref/pr_class_display.asp"; W3schools</a><br>
+        References:  <a href=https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest/responseType"; W3schools</a><br>
         <br><br><br>
   
         <script>
+            /*
             // OPCIÓN A
             function validateA() {
                 document.getElementById("blue").style.display = "none";
@@ -60,16 +161,18 @@
                 return;
             }
 
-        
+        */
         </script>
         <br><br>
-        
+        <!--
         <button type="button" onclick="validateA()">OPCION A</button>
         <button type="button" onclick="validateB()">OPCION B</button>
         <button type="button" onclick="validateC()">OPCION C</button>
         <button type="button" onclick="validateD()">OPCION D</button>
         <button type="button" onclick="validateE()">OPCION E</button>
-        <br><br><br><br>
+    -->
+
+         <br><br><br><br>
 
 </body>
 </html>
