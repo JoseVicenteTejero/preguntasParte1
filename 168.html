@@ -1,95 +1,84 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+﻿<!DOCTYPE html>
 
-    <style>
-        .mystyleA {
-          font-style: Arial;
-        }
-        .mystyleD {
-          font-family: Arial;
-        }
-  
-        </style>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>PREGUNTA 168 - JOSE VICENTE TEJERO</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- https://developers.google.com/speed/libraries#jquery -->
 </head>
 <body>
     <h1>PREGUNTA 168 - JOSE VICENTE TEJERO</h1>
 
-    <br> <br>
-    <p> You have the following markup.</p><br><br>
     <xmp>
-    <div id="yellow" style=background-color:yellow> My Yellow Content </div>
-    <div id="blue" style=background-color:blue> My Blue Content </div>
-    <div id="red" style=background-color:red> My Red Content </div>
+        You are developing an HTML page that includes the following code.
+
+        <h1 id="header">A Static Page</h1>
+
+            You need to modify the content of the H1 element dynamically by using JavaScript.
+            Which code segment should you use?
+
+            A.- var myHeader = document.getElementsByTagName("header");
+            myHeader = "A Dynamic Page";
+
+            B.- var myHeader = document.getElementsById("header");
+            myHeader = "A Dynamic Page";
+
+
+            C.- var myHeader = document.getElementsByTagName("header");
+            myHeader.innerHTML = "A Dynamic Page";
+
+            D.- var myHeader = document.getElementsById("header");
+            myHeader.innerHTML = "A Dynamic Page";
+
+            Correct Answer: D ES LA RESPUESTA CORRECTA
+            Section: Volume D
+            Explanation
+            Explanation/Reference:
+            Explanation:
+            innerHTML
+            The innerHTML property sets or returns the HTML content (inner HTML) of an element.
+
+            Example
+            Change the HTML content of a <h1> </h1> element with id="header":
+    document.getElementById("header").innerHTML = "A dynamic page";
     </xmp>
-    <br><br>
-    <div id="yellow" style=background-color:yellow> My Yellow Content </div>
-    <div id="blue" style=background-color:blue> My Blue Content </div>
-    <div id="red" style=background-color:red> My Red Content </div>
 
-   
-    <p>
-     
-        <p> Which line of code should you use?</p><br>
-        <p></p>
-        A. document.getElementById("blue").style.display = "none"<br>
-        B. $("#blue").css("visibility", "collapse");<br>
-        C. document.getElementById("blue").style.visibility = "hidden"<br>
-        D. $("#blue").css("display", "hidden");<br>
-        E. document/getElementById (“blue”).style.visibility = “hidden”<br><br><br>
-
-        Correct Answer: A<br>
-        Section: Volume D<br>
-        Explanation: CREO QUE ES LA OPCIÓN C (HIDDEN), PERO NO HE PODIDO COMPROBARLO. AL PULSAR CUALQUIER BOTÓN <br>
-        ME DA ERROR 404. <br>
-        </p>
-        References:  <a href=https://www.w3schools.com/CSSref/pr_class_display.asp"; W3schools</a><br>
-        <br><br><br>
-        <!-- <input type="button" value="OPCIÓN A" onclick="document.getElementById('azul').style.display='none'"> -->
+    <h3 id="header">A Static Page</h3>
         <script>
             // OPCIÓN A
             function validateA() {
-                document.getElementById("blue").style.display = "none";
-                // return;
-            }
-        
-            // OPCIÓN B
-            function validateB() {
-                $("#blue").css("visibility", "collapse");
-                //return;
-            }
-        
-            // OPCIÓN C
-            function validateC() {
-                document.getElementById("blue").style.visibility = "hidden";
-                //return;
-            }
-        
-            // OPCIÓN D
-            function validateD() {
-                $("#blue").css("visibility", "hidden");
-               //return;
-            }
-            // OPCIÓN E
-            function validateE() {
-                document/getElementById("blue").style.visibility = "hidden";
-                //return;
+                var myHeader = document.getElementsByTagName("header");
+                myHeader = "A Dynamic Page";
             }
 
-        
+            // OPCIÓN B
+            function validateB() {
+                var myHeader = document.getElementsById("header");
+                myHeader = "A Dynamic Page";
+            }
+
+            // OPCIÓN C
+            function validateC() {
+                var myHeader = document.getElementsByTagName("header");
+                myHeader.innerHTML = "A Dynamic Page";
+            }
+
+            // OPCIÓN D
+            function validateD() {
+                var myHeader = document.getElementsById("header");
+                myHeader.innerHTML = "A Dynamic Page";
+            }
+
         </script>
         <br><br>
-        
 
         <button type="button" onclick="validateA()">OPCION A</button>
         <button type="button" onclick="validateB()">OPCION B</button>
         <button type="button" onclick="validateC()">OPCION C</button>
         <button type="button" onclick="validateD()">OPCION D</button>
-        <button type="button" onclick="validateE()">OPCION E</button>
-        <br><br><br><br>
-
+        <br><br>
+        REFERENCIA: <br>
+        <a href="https://www.w3schools.com/jsref/prop_html_innerhtml.asp">w3schols</a> <br>
 </body>
 </html>
