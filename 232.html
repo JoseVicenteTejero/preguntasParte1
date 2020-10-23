@@ -7,16 +7,62 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <!-- https://developers.google.com/speed/libraries#jquery -->
     <style>
-        .navlist{
-            background-color: yellow;
-        }
+           
+                .transition_style
+                {
+                    font-size:15px;
+                    font-weight: normal;
+                    width:50px;
+                    background: orange;
+                    color: #ffffff;
+                    padding:10px;
+                    margin-left: auto;
+                    border-radius:5px;
+                    transition-property:width,height,transform, background,font-size,opacity;
+                    transition-duration:1s,1s,1s,1s,1s,1s;
+                }
+                .transition_style:hover
+                {
+                    font-size:30px;
+                    font-weight: bolder;
+                    width:100px;
+                    height:80px;
+                    margin-left: 0px;
+                    transform:rotateX(360deg);
+                    background: orange;
+                }
+                .transition_style2
+                {
+                    font-size:15px;
+                    font-weight: normal;
+                    width:50px;
+                    background: orange;
+                    color: #ffffff;
+                    padding:10px;
+                    margin-left: auto;
+                    border-radius:5px;
+                    transition: all is linear;
+                }
+                .transition_style2:hover
+                {
+                    font-size:30px;
+                    font-weight: bolder;
+                    width:100px;
+                    height:80px;
+                    margin-left: 0px;
+                    transform:rotateX(360deg);
+                    background: orange;
+                }
+                 
+    </style>
+</head>
+<body>
+    <h1>PREGUNTA 232 - JOSE VICENTE TEJERO</h1>
 
-        ul {
-            list-style-type: none;
-            margin: 0;
-            padding: 0;
-            background-color: yellow;
-            }
+    <p>
+     <br>
+        <Xmp>
+            You have the following code. (Line numbers are included for reference only.)
             <style>
                 .transition_style
                 {
@@ -41,40 +87,8 @@
                     transform:rotateX(360deg);
                     background: orange;
                 }
-            </style>
-    </style>
-</head>
-<body>
-    <h1>PREGUNTA 232 - JOSE VICENTE TEJERO</h1>
 
-    <p>
-     <br>
-        <Xmp>
-            You have the following code. (Line numbers are included for reference only.)
-            <style>
-                .transition_style
-                {
-                    font-size:15px;
-                    font-weight: normal;
-                    width:50px;
-                    background: orange;
-                    color: #ffffff;
-                    padding:10px;
-                    margin-left: auto;
-                    border-radius:5px;
-                    transition-property:width,height,transform,background,font-size,opacity;
-                    transition-duration:1s,1s,1s,1s,1s,1s;
-                }
-                .transition_style:hover
-                {
-                    font-size:30px;
-                    font-weight: bolder;
-                    width:100px;
-                    height:80px;
-                    margin-left: 0px;
-                    transform:rotateX(360deg);
-                    background: red;
-                }
+                LO SIGUIENTE SE HA INTRODUCIDO PARA IMPLEMENTAR LA OPCIÓN C
                 .transition_style2
                 {
                     font-size:15px;
@@ -95,9 +109,21 @@
                     height:80px;
                     margin-left: 0px;
                     transform:rotateX(360deg);
-                    background: red;
+                    background: orange;
+                }
+ 
                 }
             </style>
+                   <div class="transition_style" >OPCION A - Margin-lef will move gradually from right to margin-left></div> 
+                   <br>  <br> 
+                   <br> 
+                   <div class="transition_style" >OPCION B - background color will transition gradually from orange to red></div> 
+                   <br>  <br> 
+                   <br> 
+                   <div class="transition_style2" > OPCION C - Lineas 13 y 14</div> 
+                   <br>  <br> 
+                   <br> 
+     
 
             For each of the following statements, select Yes if the statement is true. Otherwise, select No.
 
@@ -106,9 +132,9 @@
             C.- The animation effect will be the same if you replace lines 13 and 14 with the followind code:
                 transition: all is linear;
 
-                A.- Falso
-                B.- Falso - En el enunciado figura.
-                C.- Falso
+                A.- CIERTO, en el enunciado indica Falso
+                B.- FALSO - En el enunciado figura cierto
+                C.- CIERTO, en el enunciado figura falso - El resultado es el mismo pero transiciona sin tembleque.
        </Xmp>
        <div class="transition_style" >OPCION A - Margin-lef will move gradually from right to margin-left></div> 
         <br>  <br> 
@@ -119,7 +145,7 @@
         <div class="transition_style2" > OPCION C - Lineas 13 y 14</div> 
         <br>  <br> 
         <br> 
-
+ 
 
         <a href="https://www.w3.org/TR/css-cascade-3/#importance">W3 apartados 6.1, 6.2 y  6.3 </a> <br>
         <a href="https://www.w3.org/TR/css-cascade-3/#cascade-sort">W3 apartados 6.1, 6.2 y  6.3 </a> <br>

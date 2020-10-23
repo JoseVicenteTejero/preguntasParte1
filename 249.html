@@ -31,7 +31,22 @@
             La respuesta correcta del enunciado es: ACE
             JSON y JavaScript está indicado expresamente en la documentación
             DOM y window se indica que NO se puede utilizar directamente.
-            De parent y string NO he encontarado nada.
+
+            Los Web Workers no tienen acceso al 
+            DOM
+            window
+            parent
+            document
+
+            Por lo que las opciones B, D y F quedan descartadas.
+
+            JavaScript es el entorno de script por lo que definiremos los Web Worker, por lo que esta es correcta: 
+
+            En el capítulo 14 del curso de 20480C en la lección "Communicating with a Dedicated Web Worker"  cita:
+            "...To send a message to a web worker, the webpage can use the postMessage() function of the web worker
+            object. This function takes a parameter containing the data to send to the web worker. This parameter 
+            can be a string or a JSON object..."
+            Por lo anterior JSON y string, también son correctas.
            
             Explanation:
             Por ejemplo no se puede manipular directamente el DOM, ni usar algunos métodos y propiedades por defecto del objeto window. 
